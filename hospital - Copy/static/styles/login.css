@@ -1,0 +1,98 @@
+ .h{
+            font-family:'Lucida Console',Sans-serif;
+            transform:translate(5%,-170%);
+            position:absolute;
+            font-size:2em;
+            font-weight:bold;
+            color:#736c6c;
+ }
+ .login_{
+             background-color:skyblue;
+             padding:70px;
+             top:25%;
+             margin-left:20%;
+             position:absolute;
+             width:10%;
+             border:5px solid blue;
+             border-radius:40px;
+
+ }
+ .user{
+              background-color:none;
+              color:black;
+              text-align:center;
+              font-size:1em;
+              border-radius:40px;
+              padding:10px;
+              margin: 25px 10px 10px -8px; ;
+              width:100%;
+              border:3px solid blue;
+              outline:none;
+ }
+
+ .pass{
+             background-color:none;
+             color:black;
+             text-align:center;
+             font-size:1em;
+             border-radius:40px;
+             padding:10px;
+             margin: 10px 10px 10px -8px;
+             width:100%;
+             outline:none;
+             border:3px solid blue;
+ }
+
+.here{
+       color:blue;
+       float:left;
+       margin-top:3px;
+       margin-bottom:0px;
+       text-decoration:none;
+       margin-bottom:-1px;
+ }
+ .forget{
+        text-decoration:none;
+        color:blue;
+        float:left;
+        margin-top:3px;
+        margin-bottom:-5px;
+
+ }
+ .submi{
+               position:absolute;
+               margin-left:-60px;
+               margin-top:-5%;
+               background:#736c6c;
+               outline:none;
+               width:55%;
+               border:none;
+               font-size:1em;
+               border-radius:40px;
+
+ }
+
+ .submit:hover{
+                 transition:.6s;
+                 background:#736c6c;
+                 color:white;
+ }
+
+.pi{
+                margin-top:20px;
+                text-decoration:none;
+                color:#524524e4e;
+
+ }
+
+.messlog{
+            position:absolute;
+            top:82%;
+            left:19%;
+            font-size:1.5em;
+            color:black;
+            border:3px dashed black;
+            background-color:red;
+            border-radius:30px;
+            border-width:3px;
+}

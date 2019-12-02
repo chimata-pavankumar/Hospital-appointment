@@ -1,0 +1,80 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet"  type="text/css" href="{% static 'styles/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+    <style type="text/css">
+    body{
+         background-image:url("{%static 'images/scetes.jpg' %}");
+         background-attachment:fixed;
+         background-size:100%;
+         image-size:100%;
+         overflow:hidden;
+    }
+     ul{
+        background-color:#02f022;
+        list-style-type:none;
+        font-size:1.2em;
+        color:black;
+        overflow:hidden;
+        padding:0px;
+        border-radius:20px;
+     }
+     li{
+        color:black;
+        float:right;
+        margin-right:20px;
+        padding:10px;
+        display:block;
+
+     }
+     li a{
+         color:black;
+         text-decoration:none;
+     }
+     li a:hover{
+          background-color:#02a818;
+          padding:10px;
+          color:white;
+          border-radius:20px;
+     }
+     .active{
+          background-color:#02a818;
+          padding:10px;
+          color:white;
+          border-radius:20px;
+     }
+    </style>
+</head>
+<body>
+<div class="headpart">
+    <h1 class="h1">Vastha Hospitals</h1>
+    <ul>
+        <li><a href="#">Contact us:5674893237</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="login" class="active">Login</a> </li>
+        <li><a href="register">Register</a></li>
+        <li><a href="/">Home</a></li>
+    </ul>
+</div>
+<div class="login_">
+    <form action="login" method="post">
+        {% csrf_token %}
+        <h1 class="h">Login</h1>
+        <input type="text" class="user" name="username" placeholder="username" required><br>
+        <input type="password" name="password" placeholder="password" class="pass" required><br>
+        <input type="submit" class="submi" value="Login">
+        <a href="#" class="forget">forget password ?</a>
+        <a href="http://127.0.0.1:8000/accounts/register" class="here"> Register Here</a><br>
+    </form>
+</div>
+<div class="messlog">
+        {% for mess in messages  %}
+           {{mess}}
+        {% endfor %}
+</div>
+</body>
+</html>

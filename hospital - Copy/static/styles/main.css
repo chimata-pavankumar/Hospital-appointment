@@ -1,0 +1,110 @@
+.headpart{
+   background-color:#02f022;
+   top:0px;
+   left:0px;
+   position:absolute;
+   padding:0px;
+   width:100%;
+}
+.treatlist caption{
+    background-color:#533802;
+    color:white;
+    font-size:1.5em;
+    border:2px solid orange;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+.treatlist{
+    min-width:700px;
+    margin:80px,0px;
+    border-collapse:collapse;
+    position:absolute;
+    top:25%;
+    left:25%;
+    border-radius:10px 10px 10px 10px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+.htg{
+     font-size:2em;
+     color:blue;
+     background:orange;
+     width:50%;
+     position:absolute;
+     left:40%;
+     top:40%;
+}
+.treatlist thead tr{
+    background-color:#0ec77d;
+    color:black;
+    text-align:left;
+    font-size:1.4em;
+}
+.treatlist th,
+.treatlist td{
+       padding:9px;
+       border-radius:60px;
+}
+.treatlist tbody tr{
+     border-bottom: 0px solid white;
+     background-color:navy;
+     color:white;
+     font-size:1em;
+}
+.treatlist tbody tr:nth-of-type(even){
+     background-color:#a1b9c9;
+}
+
+.treatlist tbody tr:last-of-type{
+     border-bottom:0px solid white;
+}
+.submi{
+   font-size:1em;
+   font-weight:bold;
+   position:absolute;
+   background-color:#02f022;
+   border-radius:20px;
+   padding:15px;
+   top:86%;
+   left:47%;
+   outline:none;
+}
+
+.submi:hover{
+             transition:.6s;
+             background:#046070;
+             color:white;
+}
+.submit{
+   text-style-type:none;
+   text-decoration:none;
+   text-align:center;
+   font-size:1em;
+   position:absolute;
+   background-color:#02f022;
+   border-radius:20px;
+   padding:10px;
+   top:89%;
+   left:25%;
+   display:block;
+   font-weight:bold;
+   width:52%;
+   margin:0px;
+   color:black;
+   outline:none;
+}
+.submit:hover{
+       transition:.6s;
+       color:white;
+       background-color:#046070;
+}
+.appoit{
+               background:red;
+               border-radious:15px;
+               border:3px solid black;
+          }
+.innerhtml{
+                   color:blue;
+                   font-size:xx-large;
+}

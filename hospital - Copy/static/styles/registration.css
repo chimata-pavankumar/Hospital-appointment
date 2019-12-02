@@ -1,0 +1,145 @@
+.h{
+            font-family:'Lucida Console',Sans-serif;
+            transform:translate(10%,-180%);
+            position:absolute;
+            top:8%;
+            font-size:1.5em;
+            font-weight:bold;
+            color:black;
+            text-shadow: 4px 2px 15px white;
+}
+
+        .registration_{
+             background-color:skyblue;
+             padding:30px;
+             top:27%;
+             margin-left:20%;
+             margin-right:50%;
+             margin-bottom:10px;
+             position:absolute;
+             width:18%;
+             border:5px solid blue;
+             border-radius:40px;
+
+        }
+        
+        .user_name{
+              background-color:none;
+              color:black;
+              text-align:center;
+              font-size:1em;
+              border-radius:40px;
+              padding:5px;
+              margin: 20px 10px 5px 10px;
+              width:80%;
+              border:3px solid blue;
+        }
+        .first_name{
+             background-color:none;
+             color:black;
+             text-align:center;
+             font-size:1em;
+             border-radius:40px;
+             padding:5px;
+             margin: 5px 10px 5px 10px;
+             width:80%;
+             outline:none;
+             border:3px solid blue;
+        }
+        .last_name{
+             background-color:none;
+             color:black;
+             text-align:center;
+             font-size:1em;
+             border-radius:40px;
+             padding:5px;
+             margin: 5px 10px 5px 10px;
+             width:80%;
+             outline:none;
+             border:3px solid blue;
+        }
+         .email{
+             background-color:none;
+             color:black;
+             text-align:center;
+             font-size:1em;
+             border-radius:40px;
+             padding:5px;
+              margin: 5px 10px 5px 10px;
+             width:80%;
+             outline:none;
+             border:3px solid blue;
+         }
+        .pas{
+             background-color:none;
+             color:black;
+             text-align:center;
+             font-size:1em;
+             border-radius:40px;
+             padding:5px;
+             margin: 5px 10px 5px 10px;
+             width:80%;
+             outline:none;
+             border:3px solid blue;
+        }
+        .pass{
+             background-color:none;
+             color:black;
+             text-align:center;
+             font-size:1em;
+             border-radius:40px;
+             padding:5px;
+             margin: 5px 10px 5px 10px;
+             width:80%;
+             outline:none;
+             border:3px solid blue;
+        }
+        
+        .subm{
+               font-size:1em;
+               font-weight:bold;
+               position:relative;
+               background:#736c6c;
+               outline:none;
+               margin: 15px 15px;
+               width:85%;
+               border:none;
+               font-size:1em;
+               padding-top:10px;
+               padding-bottom:10px;
+               border-radius:40px;
+               overflow:hidden;
+        }
+        .p{
+                float:left;
+                color:blue;
+                margin-top:1px;
+                margin-bottom:5px;
+                text-decoration:none;
+                padding:0px;
+        }
+         .pi{
+                float:left;
+                margin-top:0px;
+                margin-bottom:-15px;
+                padding:0px;
+                text-color:orange;
+                text-decoration:none;
+        }
+        .subm:hover{
+                 transition:.6s;
+                 background:#524e4e;
+                 color:white;
+        }
+
+.messlog{
+            position:absolute;
+            top:50%;
+            left:50%;
+            font-size:1.5em;
+            color:black;
+            border:3px dashed black;
+            background-color:red;
+            border-radius:30px;
+            border-width:3px;
+}

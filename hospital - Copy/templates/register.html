@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registeration for Vastha</title>
+    <link rel="stylesheet"  type="text/css" href="{% static 'styles/registration.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/main.css' %}">
+    <style type="text/css">
+     body{
+         background-image:url("{%static 'images/scetes.jpg' %}");
+         background-attachment:fixed;
+         background-size:100%;
+         image-size:100%;
+         overflow:hidden;
+     }
+     ul{
+        background-color:#02f022;
+        list-style-type:none;
+        font-size:1.2em;
+        color:black;
+        overflow:hidden;
+        padding:0px;
+        border-radius:20px;
+     }
+     li{
+        color:black;
+        float:right;
+        margin-right:20px;
+        padding:10px;
+        display:block;
+
+     }
+     li a{
+         color:black;
+         text-decoration:none;
+     }
+     li a:hover{
+          background-color:#02a818;
+          padding:10px;
+          color:white;
+          border-radius:20px;
+     }
+     .active{
+          background-color:#02a818;
+          padding:10px;
+          color:white;
+          border-radius:20px;
+     }
+    </style>
+</head>
+<body>
+<div class="headpart">
+    <h1 class="h1">Vastha Hospitals</h1>
+    <ul>
+        <li><a href="#">Contact us:5674893237</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="login">Login</a> </li>
+        <li><a href="register" class="active">Register</a></li>
+        <li><a href="/">Home</a></li>
+    </ul>
+</div>
+<div class="registration_">
+    <form action="register" method="post">
+        {% csrf_token %}
+        <h1 class="h">Registration</h1>
+        <input type="text" class='user_name' name="username" placeholder="username" required><br>
+        <input type="text" name="first_name" class="first_name" placeholder="first_name" required><br>
+        <input type="text" name="last_name" class="last_name" placeholder="last_name" required><br>
+        <input type="email" name="email" class='email' placeholder="email" required><br>
+        <input type="password" name="password" class="pass" placeholder="password" required><br>
+        <input type="password" name="password2"class="pas" placeholder="comfirm password" required><br>
+        <input type="submit" name="submit" class="subm" value="SUBMIT">
+    </form>
+    <p class="p">already have an account</p>
+    <p class="pi"><a href="http://127.0.0.1:8000/accounts/login">Login Here</a>.</p>
+</div>
+<div class="messlog">
+        {% for mess in messages  %}
+           {{mess}}
+        {% endfor %}
+</div>
+</body>
+</html>
